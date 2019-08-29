@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="3dp"
+    android:layout_margin="3dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgKuliner"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="10dp"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FFFFFF"
+        tools:src="@color/colorAccent"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:layout_toEndOf="@+id/imgKuliner"
+        android:layout_toRightOf="@id/imgKuliner"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/namaKuliner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="3dp"
+            android:text="@string/nama_kuliner"
+            android:textSize="18sp"
+            android:typeface="normal"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/asalKuliner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/asal_kuliner"
+            android:textSize="13sp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="#2C2B2B" />
+
+    </LinearLayout>
+
+</RelativeLayout>
